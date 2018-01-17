@@ -1,0 +1,158 @@
+<!-- Bootstrap Grid Demo -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Bootstrap Demo</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <style>
+	/*.border{
+    border-bottom: 1px solid darkgrey;
+  }
+  */
+  .padOut {
+    margin: 0;
+  }
+
+  .center {
+    margin: 0 auto;
+  }
+  .pic{
+    width: 100%;
+  }
+  /*Played around with this quite a bit and couldn't get the banner to look correct. Guessing my photo size is off but I couldn't get that to do much either. */
+  .pic h3{
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+  }
+
+  /*Trying to get my name to match requirements. Tried a couple different identifiers for navbar and none seemed to work*/
+  .ml{
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5
+  }
+  footer{
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #fff;
+  color: #ccc;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #4aaaa5
+  }
+  </style>
+</head>
+
+<body>
+<!-- This is the Your NavBar Section - Pulled from Bootstrap site -->
+<!-- Should this have been inserted above in the "header" section? -->
+<!-- Tried getting my name to move further to the right. If I tried a number higher than 5 in *ml -5* it moved name all the way to the left -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand ml-5" href="index.html">Jason Kunkel</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav ml-auto mr-5">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- This ends Your NavBar Section -->
+
+
+<!-- This Starts Portfolio Section - I typed this myself using rows and grids for layout.  -->
+<!-- I started this section on Friday after class and cannot recall how I got the layout. For example, I don't know what the *padOut* language means in the container class but wanted to keep it in if it was important -->
+<div class="container padOut">
+    <div class="row center">
+      <div class="col-md-9">
+        <div class="Portfolio">
+          <h3>Portfolio</h3>
+          <hr>
+        </div>
+        
+    <br>
+        <div class="row">
+          <div class="col-md-4 pic">
+            <img src="images/technics-q-c-640-480-1.jpg" alt="Hangman" class="img-thumbnail">
+
+            <h3>Hangman</h3>
+          </div>
+          <div class="col-md-4 pic">
+            <img src="images/technics-q-c-640-480-2.jpg" alt="RPG Game" class="img-thumbnail">
+
+            <h3>RPG Game</h3>
+         <!-- Tried to do sub columns under Connect With Me but it threw off the rows below -->
+          </div>
+          <div class="col-md-4">
+            <div class="Sidebar">
+              <div class="panel-heading">
+                <h3 class="panel-title">Connect With Me</h3>
+              </div>
+            </div>
+          </div>
+      </div>
+  
+    <br>
+      <div class="row">
+        <div class="col-md-4 pic">
+          <img src="images/technics-q-c-640-480-5.jpg" alt="Trivia Game" class="img-thumbnail">
+
+          <h3>Trivia Game</h3>
+        </div>
+        <div class="col-md-4 pic">
+          <img src="images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget" class="img-thumbnail">
+
+          <h3>Rutgers Info Widget</h3>
+        </div>
+      </div>
+    <br>
+      <div class="row">
+        <div class="col-md-4 pic">
+          <img src="images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors" class="img-thumbnail">
+
+          <h3>Rock Paper Scissors</h3>
+        </div>
+      </div>
+
+  <br>
+ <footer>
+    <div class="container">
+      Copyright &copy; 2016 Your Name
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
